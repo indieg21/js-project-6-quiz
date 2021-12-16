@@ -1,0 +1,119 @@
+<!--  Build a Quiz.
+Requirements:
+Create a Github repository for this project. 
+-Create an HTML form with a three-question quiz
+-Each question should have four multiple-choice answers to choose from.
+-When the user submits the quiz, add a message underneath each question 
+letting them know if they got it right/wrong (give them the correct answer). 
+
+Summary of steps
+
+Create a HTML page w/multiple choice questions. Create 3 questions w/four answer choices. 
+Logic for setup: To use quereySelectorAll to select all answers as a list of Array. We
+use forEach to loop through the Array. Then we store the checked answer to the varaible calle answer.
+
+Next compare the chosen answer to the correct answer from the answer list variable.
+Next display the result based on condition to the dom
+
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem 6</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <h1>Multiple Choice Game</h1>
+
+    <div>
+      <p>1. What is the largest city in New York?</p>
+      <p>
+        <input type="radio" class="answer1" name="question1" value="Albany" />A.
+        Albany
+      </p>
+      <p>
+        <input
+          type="radio"
+          class="answer1"
+          name="question1"
+          value="Buffalo"
+        />B. Buffalo
+      </p>
+      <p>
+        <input
+          type="radio"
+          class="answer1"
+          name="question1"
+          value="New York City"
+        />C. New York City
+      </p>
+      <p>
+        <input
+          type="radio"
+          class="answer1"
+          name="question1"
+          value="Rochester"
+        />D. Rochester
+      </p>
+
+      <input type="button" name="" value="Submit" onclick="checkAnswer1()" />
+
+      <div class="result1"></div>
+    </div>
+
+    <div>
+      <p>2. What is the Capital of France?</p>
+      <p>
+        <input type="radio" class="answer2" name="question2" value="Boston" />A.
+        Boston
+      </p>
+      <p>
+        <input type="radio" class="answer2" name="question2" value="Paris" />B.
+        Paris
+      </p>
+      <p>
+        <input type="radio" class="answer2" name="question2" value="Main" />C.
+        Main
+      </p>
+      <p>
+        <input type="radio" class="answer2" name="question2" value="Italy" />D.
+        Italy
+      </p>
+
+      <input type="button" name="" value="Submit" onclick="checkAnswer2()" />
+
+      <div class="result2"></div>
+    </div>
+
+    <div>
+      <p>3. How many boroughs are in New York City?</p>
+      <p>
+        <input type="radio" class="answer3" name="question3" value="Two" />A.
+        Two
+      </p>
+      <p>
+        <input type="radio" class="answer3" name="question3" value="Five" />B.
+        Five
+      </p>
+      <p>
+        <input type="radio" class="answer3" name="question3" value="Seven" />C.
+        Seven
+      </p>
+      <p>
+        <input type="radio" class="answer3" name="question3" value="Four" />D.
+        Four
+      </p>
+
+      <input type="button" name="" value="Submit" onclick="checkAnswer3()" />
+
+      <div class="result3"></div>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
