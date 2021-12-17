@@ -28,90 +28,121 @@ Next display the result based on condition to the dom
   </head>
 
   <body>
-    <h1>Multiple Choice Game</h1>
+    <div class="container">
+      <h1>Multiple Choice Game</h1>
+      <form class="quiz">
+        <div class="question">
+          <p>1. What is the largest city in New York?</p>
+          <p>
+            <input
+              type="radio"
+              class="answer1"
+              name="question1"
+              value="Albany"
+            />A. Albany
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer1"
+              name="question1"
+              value="Buffalo"
+            />B. Buffalo
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer1"
+              name="question1"
+              value="New York City"
+            />C. New York City
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer1"
+              name="question1"
+              value="Rochester"
+            />D. Rochester
+          </p>
+        </div>
 
-    <div>
-      <p>1. What is the largest city in New York?</p>
-      <p>
-        <input type="radio" class="answer1" name="question1" value="Albany" />A.
-        Albany
-      </p>
-      <p>
-        <input
-          type="radio"
-          class="answer1"
-          name="question1"
-          value="Buffalo"
-        />B. Buffalo
-      </p>
-      <p>
-        <input
-          type="radio"
-          class="answer1"
-          name="question1"
-          value="New York City"
-        />C. New York City
-      </p>
-      <p>
-        <input
-          type="radio"
-          class="answer1"
-          name="question1"
-          value="Rochester"
-        />D. Rochester
-      </p>
+        <div class="question">
+          <p>2. What is the Capital of France?</p>
+          <p>
+            <input
+              type="radio"
+              class="answer2"
+              name="question2"
+              value="Boston"
+            />A. Boston
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer2"
+              name="question2"
+              value="Paris"
+            />B. Paris
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer2"
+              name="question2"
+              value="Main"
+            />C. Main
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer2"
+              name="question2"
+              value="Italy"
+            />D. Italy
+          </p>
+        </div>
 
-      <input type="button" name="" value="Submit" onclick="checkAnswer1()" />
+        <div class="question">
+          <p>3. How many boroughs are in New York City?</p>
+          <p>
+            <input
+              type="radio"
+              class="answer3"
+              name="question3"
+              value="Two"
+            />A. Two
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer3"
+              name="question3"
+              value="Five"
+            />B. Five
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer3"
+              name="question3"
+              value="Seven"
+            />C. Seven
+          </p>
+          <p>
+            <input
+              type="radio"
+              class="answer3"
+              name="question3"
+              value="Four"
+            />D. Four
+          </p>
+        </div>
 
-      <div class="result1"></div>
-    </div>
+        <button class="btn">Submit answer</button>
 
-    <div>
-      <p>2. What is the Capital of France?</p>
-      <p>
-        <input type="radio" class="answer2" name="question2" value="Boston" />A.
-        Boston
-      </p>
-      <p>
-        <input type="radio" class="answer2" name="question2" value="Paris" />B.
-        Paris
-      </p>
-      <p>
-        <input type="radio" class="answer2" name="question2" value="Main" />C.
-        Main
-      </p>
-      <p>
-        <input type="radio" class="answer2" name="question2" value="Italy" />D.
-        Italy
-      </p>
-
-      <input type="button" name="" value="Submit" onclick="checkAnswer2()" />
-
-      <div class="result2"></div>
-    </div>
-
-    <div>
-      <p>3. How many boroughs are in New York City?</p>
-      <p>
-        <input type="radio" class="answer3" name="question3" value="Two" />A.
-        Two
-      </p>
-      <p>
-        <input type="radio" class="answer3" name="question3" value="Five" />B.
-        Five
-      </p>
-      <p>
-        <input type="radio" class="answer3" name="question3" value="Seven" />C.
-        Seven
-      </p>
-      <p>
-        <input type="radio" class="answer3" name="question3" value="Four" />D.
-        Four
-      </p>
-
-      <input type="button" name="" value="Submit" onclick="checkAnswer3()" />
-
-      <div class="result3"></div>
+        <div class="displayResult"></div>
+      </form>
     </div>
 
     <script src="script.js" charset="utf-8"></script>
